@@ -1,11 +1,15 @@
 import mongoose from 'mongoose';
 
 class Database {
+  constructor() {
+    this.mongoose();
+  }
+
   mongoose() {
     this.mongoConnection = mongoose.connect(
-      'mongodb+srv://root:adminusr@cluster-tindev-dbtwx.mongodb.net/tindev-omnistack?retryWrites=true&w=majority',
+      'mongodb+srv://root:adminusr@cluster-tindev-dbtwx.mongodb.net/tindev_omnistack?retryWrites=true&w=majority',
       {
-        UseNewUrlParser: true,
+        useNewUrlParser: true,
         useFindAndModify: true,
       }
     );

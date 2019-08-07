@@ -17,7 +17,7 @@ const DevSchema = Schema(
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   }
 );
 
