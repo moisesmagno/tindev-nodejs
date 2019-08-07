@@ -1,0 +1,16 @@
+{
+  "name": "Tindev",
+  "version": "1.0.0",
+  "description": "Tinder para desenvolvedores.",
+  "main": "index.js",
+  "repository": "https://github.com/moisesmagno/tindev-nodejs.git",
+  "author": "Moisés S. E. Aguilar <moisesmagno@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "sucrase": "^3.10.1"
+  }
+}
