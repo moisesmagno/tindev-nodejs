@@ -5,6 +5,13 @@ class DevController {
   async store(req, res) {
     const { username } = req.body;
 
+    // Verificar se o usuário já existe
+    const userExist = await Dev.findOne({ user: username });
+
+    if (userExist) {
+      return res.json(userExist);
+    }
+
     const response = await axios.get(
       `https://api.github.com/users/${username}`
     );
