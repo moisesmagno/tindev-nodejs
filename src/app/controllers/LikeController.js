@@ -13,7 +13,7 @@ class LikeController {
       return res.status(400).json({ error: 'Dev not exists!' });
     }
 
-    // verifica-se se o Id que o usúario logado que add na sua base, já não o adicionou antes tmb, dessa forma daria um match.
+    // verifica-se se o Id que o usúario logado que está adicionando na sua base, já não o adicionou antes tmb, dessa forma daria um match.
     if (targetDev.likes.includes(loggedDev._id)) {
       console.log('Match!');
     }
