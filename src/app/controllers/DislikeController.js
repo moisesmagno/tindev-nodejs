@@ -12,7 +12,7 @@ class DislikeController {
       return res.status(400).json({ error: 'Dev not exists!' });
     }
 
-    loggedDev.dislike.push(devId);
+    loggedDev.dislikes.push(devId);
     await loggedDev.save();
 
     return res.json(loggedDev);
