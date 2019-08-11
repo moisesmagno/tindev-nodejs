@@ -9,7 +9,7 @@ class DevController {
 
     const users = await Dev.find({
       $and: [
-        { _id: { $ne: user } },
+        { _id: { $ne: loggedDev._id } },
         { _id: { $nin: loggedDev.likes } },
         { _id: { $nin: loggedDev.dislikes } },
       ],
